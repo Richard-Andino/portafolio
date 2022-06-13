@@ -1,0 +1,198 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor{
+    width:100%;
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+.left{
+    width:30%;
+    background-image:url("img/fondo\ neon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+    color:white;
+    position:fixed;
+    top:0;
+}
+.right{
+    width:70%;
+    background-color:black;
+    height:100%;
+    position:absolute;
+    left:30%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.medio{
+    width:20%;
+    background-color:white;
+    height:60%;
+    position:fixed;
+    z-index: 20;
+    top:20%;
+    left:25%;
+    box-shadow: 3px 3px 15px 1px rgba(255, 255, 255, 0.849);
+}
+img{
+    width:100%;
+    position:absolute;
+    top:10%;
+}
+.nick h1{
+    position:relative;
+    top:20px;
+    left:40px;
+}
+.animado{
+    color:yellow;
+    font-weight: bold;
+    width:150px;
+    height:20px;
+    position:relative;
+    top:30%;
+    left:17%;
+    text-align:center;
+
+    overflow: hidden;
+}
+.animacion{
+    list-style: none;
+    animation: cambiar 6s infinite;
+}
+@keyframes cambiar{
+    0%{margin-top:0;
+    }
+    20%{margin-top:0;
+    }
+
+    25%{margin-top:-20px;
+    }
+    50%{margin-top:-20px;
+    }
+
+    55%{margin-top:-40px;
+    }
+    80%{margin-top:-40px;
+    }
+
+    85%{margin-top:-20px;
+    }
+    95%{margin-top:-20px;
+    }
+    
+    100%{margin-top:0;
+    }
+
+}
+.soy{
+    width:150px;
+    position:relative;
+    top:27%;
+    left:18%;
+    text-align:center;
+}
+
+.ini{
+    width:250px;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    text-align:center; 
+    color:white;
+    
+}
+.ini h1{
+    color:yellow;
+}
+.bnav{
+    list-style: none;
+    position:fixed;
+    top:2px;
+    left:35%;
+    z-index: 100;
+    display:flex;
+    justify-content:space-evenly;
+    border:2px solid white;
+    width:60%;
+    border-radius: 15px;
+    background-color:black;
+}
+a{
+    color: white;
+    text-decoration: none;
+
+}
+a:hover{
+    color:yellow;
+    font-weight: bold;
+}
+.about{
+    height:100vh;
+    position:absolute;
+    left:30%;
+    background-color:rgb(31, 28, 28);
+    z-index: 19;
+}
+.info{
+    position:relative;
+    top:15%;
+    left:27%;
+    width:65%;
+    text-align:justify;
+    color:white;
+}
+.info h1{
+    color:yellow;
+    margin-bottom:20px;
+    border-left:7px solid white;
+    border-right:7px solid white;
+    text-align:center;
+}
+.info p{
+    margin-bottom:20px;
+}
+li{
+    list-style: none;
+}
+.habilidades{
+    position:absolute;
+    top:200%;
+    left:30%;
+    height: 100vh;
+    background-color:black;
+}
+.habilidades .info h1{
+    border-left: 7px solid white;
+    width:200px;
+}
+.proyectos{
+    position:absolute;
+    top:300%;
+    left:30%;
+    height:100vh;
+    background-color:rgb(31, 28, 28);
+}
+.proyectos .info h1{
+    border-left: 7px solid white;
+    width:200px;
+}
+.copy{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    color:white;
+    font-size:0.8em;
+    background-color:black;
+}
+.Nombre{
+    color:yellow;
+    font-size:1.1em;
+}
